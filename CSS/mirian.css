@@ -1,0 +1,436 @@
+/* Light-gray color */
+
+.info {
+  background: lightgray;
+}
+
+body {
+  font-family: "Mr Dafoe", cursive;
+  color: lightgray;
+  background: url(../img/bimg8.jfif) center/cover fixed no-repeat;
+}
+
+.primary-color {
+  color: orangered;
+}
+
+.info h2 {
+  word-spacing: 0.5rem;
+}
+
+.info a {
+  transition: color 2s ease-in-out;
+}
+
+.info a:hover {
+  color: black;
+}
+
+/*###### header #######*/
+
+#header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/img4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.main-btn {
+  color: cornflowerblue;
+  font-size: 3rem;
+  border: 2px solid lightgray;
+  transition: all 1s ease-in-out;
+}
+
+.main-btn:hover {
+  color: lightgray;
+  border: 2px solid lightgray;
+  background: black;
+}
+
+.mirian-btn {
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+h1 {
+  border-top: 6px dotted lightgray;
+  border-bottom: 6px dotted lightgray;
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: lightgray;
+  border-radius: 10px;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: cornflowerblue;
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*#########navbar##############*/
+
+.navbar {
+  background: lightgray;
+  padding: 20px 20px;
+  transition: all 2s ease;
+}
+
+.navbar-background {
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  transition: all 2s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: orangered;
+}
+
+.nav-btn {
+  background: transparent;
+  color: orangered;
+  border: 2px solid orangered;
+  font-size: 25px;
+  transition: all 2s ease;
+}
+
+.nav-btn:hover {
+  color: black;
+  border: 2px solid black;
+  transform: rotate(10deg);
+}
+
+.toggler-btn {
+  border: 2px solid orangered;
+  padding: 5px;
+  transition: all 2s ease;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: orangered;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg), translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 2;
+}
+
+.change .bar3 {
+  transform: rotate(45deg), translate(-5px, -8px);
+}
+/*######Menu items##############*/
+
+.item-container {
+  position: relative;
+  /* for the link */
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orangered;
+  font-size: 2rem;
+  border-top: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
+  transition: 2s all ease;
+  /*opacity: 0;*/
+}
+
+.item-container:hover .item-img {
+  opacity: 1;
+}
+
+.item-link:hover {
+  color: lightgray;
+  border: 3px solid lightgray;
+  background: lightgray;
+  color: orangered;
+}
+
+.item-container:hover {
+  outline: 10px solid orangered;
+  outline-offset: 0.8rem;
+}
+
+/*#########menu#########*/
+
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/img8.jpeg) center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid orangered;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: orangered;
+  padding: 0 0.4rems;
+}
+
+/*#############about###############*/
+
+.about-pictures {
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 150px;
+  transform: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-6 {
+  left: 0%;
+  top: 0%;
+}
+
+.img-9 {
+  left: 20%;
+  top: 20%;
+  z-index: 30;
+}
+
+.img-7 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+
+.img-13 {
+  left: 40%;
+  top: 0%;
+}
+
+.img-12 {
+  left: 0%;
+  top: 45%;
+  z-index: 10;
+}
+
+.about-image:hover {
+  outline: 10px solid orangered;
+  outline-offset: 0.8rem;
+  transform: scale(2) rotate(20deg);
+  z-index: 40;
+  opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+.about-us {
+  color: black;
+}
+
+.jollof {
+  color: chocolate;
+}
+
+/*#############reviews###########*/
+
+.review-item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.review-img {
+  width: 150px;
+}
+
+/*###########team##########*/
+
+.team-icons a .fa-facebook {
+  color: blue;
+  transition: all 2s ease-in-out;
+}
+
+.team-icons a .fa-instagram {
+  color: orange;
+  transition: all 2s ease-in-out;
+}
+
+.team-icons a .fa-twitter {
+  color: cornflowerblue;
+  transition: all 2s ease-in-out;
+}
+
+.team-icons a .fa-yelp {
+  color: orangered;
+  transition: all 2s ease-in-out;
+}
+
+.team-icons a:hover {
+  color: lightgray;
+  transform: translateY(-5px);
+}
+
+/*#################contact##################*/
+
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: orangered;
+}
+
+#contact .input-group-text {
+  background: orangered;
+  border-color: lightgray;
+  color: lightgray;
+}
+
+#contact .card input {
+  color: gray;
+}
+
+#contact .card input::placeholder {
+  color: gray;
+}
+
+.contact-btn {
+  color: orangered;
+  border-color: lightgray;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: lightgray;
+  color: cornflowerblue;
+  border-color: lightgray;
+}
+
+/*########footer#######*/
+
+#back-to-top {
+  background: lightgray;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
