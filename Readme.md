@@ -28,7 +28,7 @@ HTML5, CSS3 and JQuery.
 
 2. Any code editor can serve but i preferred using VSCode.
 
-3. The will and determination to learn how to write codes.
+3. The will and determination to learn how to write codes will be very handy in making things to work out fine.
 
 # Contributing:
 
